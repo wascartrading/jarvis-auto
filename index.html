@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS Auto · Descarga</title>
+<meta name="description" content="JARVIS Auto: asistente de voz con Gemini para la pantalla del vehículo. Descarga oficial del instalador.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--cyan:#00e5ff;--cyan2:#009ec4;--tinta:#e8fbff;--tenue:#7fb9c9;--panel:#0b1f2a;--borde:#14323f}
+  body{min-height:100vh;background:radial-gradient(circle at 50% 12%,#0a2a38,#02080c 68%);
+       color:var(--tinta);font-family:"Segoe UI",Roboto,-apple-system,sans-serif;
+       display:flex;align-items:center;justify-content:center;padding:26px}
+  .marco{width:min(900px,100%);text-align:center}
+  .reactor{width:104px;height:104px;margin:0 auto 20px;border-radius:50%;
+           background:radial-gradient(circle,#9df6ff,#00b4d8 44%,#012a38 100%);
+           box-shadow:0 0 48px rgba(0,229,255,.45);animation:latir 3.4s ease-in-out infinite}
+  @keyframes latir{0%,100%{box-shadow:0 0 38px rgba(0,229,255,.35)}50%{box-shadow:0 0 62px rgba(0,229,255,.6)}}
+  h1{font-size:clamp(26px,5vw,38px);letter-spacing:.14em;font-weight:600}
+  .sub{color:var(--tenue);margin-top:8px;font-size:clamp(14px,2.2vw,17px)}
+  .boton{display:inline-block;margin:28px 0 10px;padding:20px 46px;border-radius:14px;
+         background:linear-gradient(180deg,#00e5ff,#009ec4);color:#00161d;font-weight:700;
+         font-size:clamp(18px,3vw,23px);letter-spacing:.05em;text-decoration:none;
+         box-shadow:0 10px 34px rgba(0,229,255,.35);transition:transform .12s ease}
+  .boton:hover{transform:translateY(-2px)}
+  .boton:active{transform:scale(.98)}
+  .meta{color:#5f93a4;font-size:14px;margin-bottom:24px}
+  .qr{display:inline-flex;flex-direction:column;align-items:center;gap:8px;margin:4px 0 24px;
+      padding:16px;background:#081821;border:1px solid var(--borde);border-radius:14px}
+  .qr img{width:132px;height:132px;image-rendering:pixelated}
+  .qr span{color:#5f93a4;font-size:12px;letter-spacing:.08em}
+  .pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;text-align:left}
+  .paso{background:var(--panel);border:1px solid var(--borde);border-radius:12px;padding:14px 16px;
+        font-size:15px;color:#c9e8f2;line-height:1.45}
+  .paso b{display:block;color:var(--cyan);font-size:12px;letter-spacing:.1em;margin-bottom:6px}
+  .aviso{margin-top:22px;font-size:13.5px;color:#87a9b6;line-height:1.6;text-align:left;
+         background:#081821;border:1px solid var(--borde);border-radius:12px;padding:16px 18px}
+  .aviso strong{color:#bfe9f5;font-weight:600}
+  .pie{margin-top:22px;font-size:12px;color:#3f6b78;line-height:1.7}
+  .pie a{color:#4f8fa1;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="marco">
+  <div class="reactor"></div>
+  <h1>JARVIS AUTO</h1>
+  <div class="sub">Asistente de voz con Gemini para la pantalla del vehículo</div>
+
+  <a class="boton" href="https://files.catbox.moe/6fui8x.apk" rel="noopener">DESCARGAR E INSTALAR</a>
+  <div class="meta">Versión 2.0 · 93 KB · firmada · Android 5.0 o superior</div>
+
+  <div class="qr">
+    <img src="qr.png" alt="Código QR de descarga">
+    <span>ESCANEE PARA DESCARGAR</span>
+  </div>
+
+  <div class="pasos">
+    <div class="paso"><b>PASO 1</b>Pulse el botón y espere la descarga del archivo.</div>
+    <div class="paso"><b>PASO 2</b>Abra el archivo y permita instalar aplicaciones desconocidas.</div>
+    <div class="paso"><b>PASO 3</b>Abra JARVIS Auto y acepte el micrófono.</div>
+  </div>
+
+  <div class="aviso">
+    <strong>Funciona con Gemini, sin servidores propios.</strong> Al instalarla, la app habla
+    directamente con Gemini por internet: no depende de ninguna computadora ni de una dirección
+    de red local. Solo necesita que la pantalla del vehículo tenga conexión (Wi-Fi o el punto de
+    acceso del teléfono). Sin internet cae al modo local: mapa, aplicaciones, volumen, brillo y música.
+  </div>
+
+  <div class="pie">
+    Si el navegador avisa que el archivo puede ser dañino, elija «Descargar de todos modos»: la firma es propia.<br>
+    Creado por Wascar Bido Vargas · JARVIS Telegram
+  </div>
+</div>
+</body>
+</html>
